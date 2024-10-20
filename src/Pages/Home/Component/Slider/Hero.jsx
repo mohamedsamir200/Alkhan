@@ -1,47 +1,12 @@
 import React from "react";
-import hero from "../../../../assets/imges/newww/best1.jpg";
 import "./hero.css"
 
 export default function Hero() {
   return (
     <>
-      <section  className="   xl:p-10 h-[vh]  ">
+      <section  className="xl:p-10 h-[vh]">
 
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* 
-
-        
+{/*     
      <div className="flex justify-between w-[95%] m-auto">
           <div className=" flex flex-col justify-around ">
             <div className=" leading-loose">
