@@ -47,7 +47,7 @@ import Massage from "./Pages/Dashboard/Massage";
 export const ThemeContext = createContext();
 
 import Setting from "./Pages/Profile/Setting";
-// import Contactus from "./Pages/contact/contactus";
+import Contactus from './Pages/contact/Contactus';
 
 import ChatPage from "./Pages/ChatPage/ChatPage";
 // import ChatApp from "./components/Chat/ChatApp";
@@ -129,7 +129,7 @@ function App() {
                 <Route path="/accountbalance" element={<Accountbalance />} />
                 <Route path="/Side" element={<Side />} />
                 <Route path="/setting" element={<Setting />} />
-                {/* <Route path="/Contactus" element={<Contactus />} /> */}
+                <Route path="/Contactus" element={<Contactus />} />
                 <Route path="/Massage" element={<Massage />} />
               </Routes>
               <ToastContainer />
