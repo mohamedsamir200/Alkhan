@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "flowbite-react";
 import pic1 from "../../../../assets/imges/newww/pic1.jpeg";
 import hero from "../../../../assets/imges/hero.jpg";
-import "./Hero.css"
+// import "./Hero.css"
 function Slider() {
   return (
     <>

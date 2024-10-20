@@ -3,10 +3,10 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <section  className="xl:p-10 h-[vh]">
+      <section  >
 
-{/*     
-     <div className="flex justify-between w-[95%] m-auto">
+    
+     {/* <div className="flex justify-between w-[95%] m-auto">
           <div className=" flex flex-col justify-around ">
             <div className=" leading-loose">
               <p className=" text-7xl"><span className="text-[#DC260D]">One</span> of aKind</p>
