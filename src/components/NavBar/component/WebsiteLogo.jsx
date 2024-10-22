@@ -6,8 +6,7 @@ import Logo from "../../../assets/Logo/Logo.png";
 import { BsSearch } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleFlag } from "../../../Redux/Slices/homeSlice";
-import { loginAdmin, logoutAdmin } from "../../../Redux/Slices/adminSlice";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { logoutAdmin } from "../../../Redux/Slices/adminSlice";
 import db, { auth } from "../../../Config/firebase";
 import {
   collection,
@@ -23,9 +22,8 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-import NavSections from "./NavSections";
-import { Link, NavLink } from "react-router-dom";
-import { Button, Navbar } from "flowbite-react";
+import { NavLink } from "react-router-dom";
+import { Navbar } from "flowbite-react";
 
 function BodyNav() {
   const dispatch = useDispatch();
@@ -184,16 +182,6 @@ function BodyNav() {
   // newww
   const isActive = ({ isActive }) => {
     return {
-      // color: isActive && "#172554",
-      // fontWeight: isActive && "bold",
-      // borderBottom: isActive && "1px solid white",
-      // paddingBottom: isActive && "10px",
-      // marginRight: isActive && "10px",
-      // transition:isActive && "all 0.3s"
-
-      // backgroundColor: isActive && "#fff",
-      // padding: isActive && "8px",
-      // color: isActive && "#913B10",
       color: isActive && "#fccd88",
       borderRadius: isActive && "10px",
       textAlign: isActive && "center",
@@ -213,13 +201,6 @@ function BodyNav() {
     <>
       <Navbar className="bg-[#344646]">
         <Navbar.Brand href="/">
-          {/* <span
-            style={{ fontFamily: "cursive" }}
-            className="self-center whitespace-nowrap xl:text-3xl lg:text-3xl text-md  text-white font-bold"
-          >
-            Mashrabiya
-          </span> */}
-
           <span
             className="first text-2xl md:text-4xl text-white"
             style={{ fontFamily: "Updock, cursive" }}
@@ -406,13 +387,6 @@ function BodyNav() {
                   Home
                 </NavLink>
 
-                {/* <NavLink
-                  style={isActive}
-                  to="earnings"
-                  className="text-base md:text-sm lg:text-base font-medium text-[#ffffffd8] hover:text-white"
-                >
-                  Products
-                </NavLink> */}
                 <NavLink
                   style={isActive}
                   to="earnings"
@@ -420,14 +394,6 @@ function BodyNav() {
                 >
                   Products
                 </NavLink>
-
-                {/* <NavLink
-                  style={isActive}
-                  to="/order"
-                  className="text-base md:text-sm lg:text-base font-medium text-[#ffffffd8] hover:text-white"
-                >
-                  Order
-                </NavLink> */}
 
                 <NavLink
                   style={isActive}
@@ -445,13 +411,6 @@ function BodyNav() {
                   Event
                 </NavLink>
 
-                {/* <NavLink
-                  style={isActive}
-                  to="/dd"
-                  className="text-base md:text-sm lg:text-base font-medium text-[#ffffffd8] hover:text-white"
-                >
-                  BEST SELLER
-                </NavLink> */}
                 <NavLink
                   style={isActive}
                   to="/Users"
@@ -459,89 +418,12 @@ function BodyNav() {
                 >
                   Artists
                 </NavLink>
-                {/* <NavLink
-                  style={isActive}
-                  to="/Contactus"
-                  className="text-base md:text-sm lg:text-base font-medium text-[#ffffffd8] hover:text-white"
-                >
-                  Contact US
-                </NavLink> */}
-                {/* <NavLink
-                  style={isActive}
-                  to="/Contactus"
-                  className="text-base md:text-sm lg:text-base font-medium text-[#ffffffd8] hover:text-white"
-                >
-                  Contact US
-                </NavLink> */}
               </div>
-              {/* <div className="flex">
-                    <a href="#">
-                    <Button color="success">Sign UP</Button>
-                    </a>
-                    <a href="#">
-                    <Button color="failure">Sign UP</Button>
-                    </a>
-                    </div> */}
             </div>
           </div>
         </Navbar.Collapse>
       </Navbar>
     </>
-
-    //flowbit navbar
-
-    // <section className="bg-[#72a398]">
-    //   <div className="container flex flex-wrap justify-center sm:justify-between items-center border-white border-b-[1px] pb-0 py-1">
-
-    //     {/* Search section */}
-    //     {/* <div className="flex items-end content-end sm:hidden md:flex pt-5 sm:pt-0">
-    //       <div>
-    //         <BsSearch className="text-xl text-white cursor-pointer" />
-    //       </div>
-    //       <div>
-    //         <input
-    //           type="search"
-    //           placeholder="Search "
-    //           className="h-7 ms-2 bg-transparent border-l-0 border-t-0 border-r-0 focus:ring-0 focus:border-black text-white placeholder:text-white placeholder:font-light placeholder:text-sm"
-    //         />
-    //       </div>
-    //     </div> */}
-
-    //     {/* <!-- Website LOGO --> */}
-    //     {/* <div className="ps-5 md:ps-0 pe-5 sm:pe-0 "> */}
-    //     {/* <a href="/"> */}
-    //     {/* <img src={Logo} alt="Logo" /> */}
-    //     {/* Mashrabiya */}
-    //     {/* </a> */}
-    //     {/* </div> */}
-
-    //     {/* =================== */}
-
-    //     <Navbar className="flex  bg-[#72a398] py-4 justify-between w-full">
-    //       <div>
-
-    //         <Navbar.Brand as={Link} href="/">
-
-    //           <span className=""></span>
-    //         </Navbar.Brand>
-    //       </div>
-
-    //       <div className="   ">
-
-    //         <Navbar.Toggle className="" />
-
-    //       </div>
-
-    //       <Navbar.Collapse className="container flex justify-between">
-
-    //       </Navbar.Collapse>
-
-    //     </Navbar>
-
-    //     {/* =================== */}
-
-    //   </div>
-    // </section>
   );
 }
 

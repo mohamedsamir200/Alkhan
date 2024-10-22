@@ -8,6 +8,10 @@ export default {
     extend: {
       screens: {
         // sm: { max: "500px" }, // ==> min 0 to 500px
+
+        specialSM:{max:"600px"},
+        specialMD:{min:"601px" , max:"992px"},
+
         Md: { max: "992px" },
         // lg: { min: "769px", max: "992px" },
         Xl: { min: "993px", max: "1200px" },
@@ -23,13 +27,7 @@ export default {
       container: {
         center: true,
         padding: "2rem",
-        // padding: {
-        //   DEFAULT: "1rem",
-        //   sm: "2rem",
-        //   lg: "4rem",
-        //   xl: "5rem",
-        //   "2xl": "6rem",
-        // },
+   
       },
       fontFamily: {
         lora: ['"Lora", serif'],
